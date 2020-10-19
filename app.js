@@ -10,7 +10,6 @@ import design from'./routes/design';
 
 const app = new Koa();
 
-
 app.use(koaBody());
 app.use(cors({
     // origin: function (ctx) {
