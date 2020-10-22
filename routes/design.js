@@ -8,6 +8,9 @@ const router = new Router({
 router.get('/getResearch',DesignController.getResearch);
 router.get('/getStep',DesignController.getStep);
 router.get('/getParameters',DesignController.getParameters);
+router.get('/getThemes',DesignController.getThemes);
+
+
 
 router.post('/saveResearch',DesignController.saveResearch);
 router.post('/delResearch',DesignController.delResearch);

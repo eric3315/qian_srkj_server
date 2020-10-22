@@ -94,7 +94,32 @@ class DesignController {
             }
         }
     }
-
+    static async getThemes(ctx){
+        let {themeName=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,'../utils/theme.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {theme_name,theme_children} = jsonArr[i];
+                if(theme_name === themeName){
+                    data = theme_children
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
 
 
 

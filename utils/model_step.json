@@ -9,22 +9,25 @@
         "step_name": "产品企划",
         "parameters": [
           {
-            "option_title": "产品理念",
+            "option_title": "品牌风格",
             "option_desc": "",
             "option_type": "多选",
             "checkedValues": [],
             "options": [
-              "高级",
-              "简洁",
+              "古典",
+              "优雅",
+              "民族",
+              "前卫",
+              "浪漫",
+              "自然",
               "轻奢",
-              "雅致",
-              "成熟"
+              "雅致"
             ]
           },
           {
             "option_title": "主题设定",
             "option_desc": "主题热词",
-            "option_type": "多选",
+            "option_type": "单选",
             "options": [
               {
                 "children_title": "虚实之境",
