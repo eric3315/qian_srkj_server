@@ -120,9 +120,60 @@ class DesignController {
             }
         }
     }
-
-
-
+    static async getStyles(ctx){
+        let {styles=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,'../utils/style_img.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            let stylesArr=styles.split(',');
+            for(let i=0;i<stylesArr.length;i++){
+                let style = stylesArr[i];
+                let arr = jsonArr.filter(item=>{return item.style_type === style});
+                if(arr.length>0){
+                    data.push(arr[0])
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+    static async getSeries(ctx){
+        let {themeName=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,'../utils/series_img.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {theme_name} = jsonArr[i];
+                if(theme_name === themeName){
+                    data.push(jsonArr[i]);
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
     static async saveResearch(ctx){
         let {modelName=""} = ctx.request.body;
         try{
@@ -138,12 +189,12 @@ class DesignController {
                     "steps": [
                         {
                             "step_key": 1,
-                            "step_name": "主题调研",
+                            "step_name": "产品企划",
                             "parameters": []
                         },
                         {
                             "step_key": 2,
-                            "step_name": "主题研发",
+                            "step_name": "产品系列",
                             "parameters": []
                         },
                         {

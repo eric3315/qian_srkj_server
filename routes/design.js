@@ -9,7 +9,8 @@ router.get('/getResearch',DesignController.getResearch);
 router.get('/getStep',DesignController.getStep);
 router.get('/getParameters',DesignController.getParameters);
 router.get('/getThemes',DesignController.getThemes);
-
+router.get('/getStyles',DesignController.getStyles);
+router.get('/getSeries',DesignController.getSeries);
 
 
 router.post('/saveResearch',DesignController.saveResearch);

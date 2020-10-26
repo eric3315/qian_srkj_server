@@ -1,0 +1,390 @@
+[
+  {
+    "model_name": "产品系列",
+    "theme_name": "虚实之境",
+    "img_path": "http://106.14.210.21:8080/demo/xl_1.png",
+    "series_name": "重制",
+    "main_color": [
+      {
+        "type": "主流色",
+        "color_value": "#ef5b9c",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#f05b72",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#426ab3",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#1d953f",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#f47a55",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#b69968",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "embellish_color": [
+      {
+        "type": "点缀色",
+        "color_value": "#5c7a29",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "点缀色",
+        "color_value": "#007947",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "点缀色",
+        "color_value": "#c7a252",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "common_color": [
+      {
+        "type": "常用色",
+        "color_value": "#33a3dc",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "常用色",
+        "color_value": "#8e3e1f",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "常用色",
+        "color_value": "#f36c21",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "常用色",
+        "color_value": "#2468a2",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "main_fabric": [
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_1.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_2.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_3.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_4.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_2.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "embellish_fabric": [
+      {
+        "type": "点缀面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_4.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "点缀面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_3.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },{
+        "type": "点缀面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_2.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "wear_outside_values": [],
+    "wear_outside": [
+      "大衣",
+      "风衣",
+      "西装"
+    ],
+    "inner_cloth_values": [],
+    "inner_cloth": [
+      "衬衣",
+      "卫衣"
+    ],
+    "silhouette_values": [],
+    "silhouette": [
+      "A型",
+      "H型",
+      "O型"
+    ],
+    "craft_values": [],
+    "craft": [
+      "绣花",
+      "贴片",
+      "涂层",
+      "镂空"
+    ],
+    "mountings_values": [],
+    "mountings": [
+      "拉链",
+      "扣件",
+      "铆钉",
+      "亮片",
+      "徽章"
+    ]
+  },
+  {
+    "model_name": "产品系列",
+    "theme_name": "虚实之境",
+    "img_path": "http://106.14.210.21:8080/demo/xl_3.png",
+    "series_name": "华丽日常",
+    "main_color": [
+      {
+        "type": "主流色",
+        "color_value": "#ef5b9c",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#f05b72",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#426ab3",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#1d953f",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#f47a55",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主流色",
+        "color_value": "#b69968",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "embellish_color": [
+      {
+        "type": "点缀色",
+        "color_value": "#5c7a29",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "点缀色",
+        "color_value": "#007947",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "点缀色",
+        "color_value": "#c7a252",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "common_color": [
+      {
+        "type": "常用色",
+        "color_value": "#33a3dc",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "常用色",
+        "color_value": "#8e3e1f",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "常用色",
+        "color_value": "#f36c21",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "常用色",
+        "color_value": "#2468a2",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "main_fabric": [
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_1.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_2.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_3.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_4.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "主推面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_2.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "embellish_fabric": [
+      {
+        "type": "点缀面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_4.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },
+      {
+        "type": "点缀面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_3.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      },{
+        "type": "点缀面料",
+        "img_path": "http://106.14.210.21:8080/demo/ml_2.jpg",
+        "card_info": "card_info",
+        "card_actions": "card_actions",
+        "picCheck": false
+      }
+    ],
+    "wear_outside_values": [],
+    "wear_outside": [
+      "大衣",
+      "风衣",
+      "西装"
+    ],
+    "inner_cloth_values": [],
+    "inner_cloth": [
+      "衬衣",
+      "卫衣"
+    ],
+    "silhouette_values": [],
+    "silhouette": [
+      "A型",
+      "H型",
+      "O型"
+    ],
+    "craft_values": [],
+    "craft": [
+      "绣花",
+      "贴片",
+      "涂层",
+      "镂空"
+    ],
+    "mountings_values": [],
+    "mountings": [
+      "拉链",
+      "扣件",
+      "铆钉",
+      "亮片",
+      "徽章"
+    ]
+  }
+]

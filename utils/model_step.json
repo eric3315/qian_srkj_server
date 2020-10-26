@@ -60,133 +60,117 @@
       },
       {
         "step_key": 2,
-        "step_name": "主题研发",
+        "step_name": "产品系列",
+        "parameters": []
+      },
+      {
+        "step_key": 3,
+        "step_name": "暂定",
+        "parameters": []
+      },
+      {
+        "step_key": 4,
+        "step_name": "轮廓设计",
         "parameters": [
           {
-            "option_title": "款式",
-            "option_desc": "",
-            "option_type": "多选",
+            "option_title": "衣长",
+            "option_type": "进度条",
+            "values": 10
+          },
+          {
+            "option_title": "肩部",
+            "option_type": "进度条",
+            "values": 40
+          },
+          {
+            "option_title": "腰头",
+            "option_type": "进度条",
+            "values": 50
+          },
+          {
+            "option_title": "底摆",
+            "option_type": "进度条",
+            "values": 70
+          }
+        ]
+      },
+      {
+        "step_key": 5,
+        "step_name": "结构性细节",
+        "kaijin_value": "",
+        "lingzi_value": "",
+        "koudai_value": "",
+        "parameters": [
+          {
+            "option_title": "开襟",
+            "option_type": "单选",
             "options": [
+              "无开襟",
+              "半开襟",
+              "全开襟"
+            ]
+          },
+          {
+            "option_title": "领子",
+            "option_type": "单选",
+            "options": [
+              "无领",
+              "圆领",
+              "立领",
+              "翻驳领",
+              "丝巾领"
+            ]
+          },
+          {
+            "option_title": "口袋",
+            "option_type": "",
+            "options": [
+             {
+               "children_title": "明口袋",
+               "values": 60
+             },
               {
-                "children_title": "上装",
-                "children_options": [
-                  {
-                    "option_name": "大衣",
-                    "option_flag": false,
-                    "silhouette_value": "",
-                    "silhouette_flag": false,
-                    "silhouettes": [
-                      "A型",
-                      "o型",
-                      "X型"
-                    ]
-                  },
-                  {
-                    "option_name": "夹克",
-                    "option_flag": false,
-                    "silhouette_value": "",
-                    "silhouette_flag": false,
-                    "silhouettes": [
-                      "A型",
-                      "X型"
-                    ]
-                  }
-                ]
-              },
-              {
-                "children_title": "下装",
-                "children_options": [
-                  {
-                    "option_name": "裤装",
-                    "option_flag": false,
-                    "silhouette_value": "",
-                    "silhouette_flag": false,
-                    "silhouettes": [
-                      "A型",
-                      "o型",
-                      "X型"
-                    ]
-                  },
-                  {
-                    "option_name": "半身裙",
-                    "option_flag": false,
-                    "silhouette_value": "",
-                    "silhouette_flag": false,
-                    "silhouettes": [
-                      "A型",
-                      "X型"
-                    ]
-                  }
-                ]
-              },
-              {
-                "children_title": "连体装",
-                "children_options": [
-                  {
-                    "option_name": "连体衣",
-                    "option_flag": false,
-                    "silhouette_value": "",
-                    "silhouette_flag": false,
-                    "silhouettes": [
-                      "A型",
-                      "o型",
-                      "X型"
-                    ]
-                  },
-                  {
-                    "option_name": "连衣裙",
-                    "option_flag": false,
-                    "silhouette_value": "",
-                    "silhouette_flag": false,
-                    "silhouettes": [
-                      "A型",
-                      "X型"
-                    ]
-                  }
-                ]
+                "children_title": "暗口袋",
+                "values": 20
               }
             ]
           }
         ]
       },
       {
-        "step_key": 3,
-        "step_name": "服装轮廓",
+        "step_key": 6,
+        "step_name": "细节设计",
+        "zhezhou_value": "",
+        "niukou_value": "",
+        "lalian_value": "",
         "parameters": [
           {
-            "option_title": "长度",
-            "option_desc": "",
-            "option_type": "进度条",
+            "option_title": "褶皱",
+            "option_type": "单选",
             "options": [
-              "裙身"
+              "无褶",
+              "有褶"
             ]
           },
           {
-            "option_title": "松紧",
-            "option_desc": "局部松紧尺度与廓形相关，将限制调整的尺寸",
-            "option_type": "进度条",
+            "option_title": "纽扣",
+            "option_type": "单选",
             "options": [
-              "腰头",
-              "裙身",
-              "裙摆"
+              "无扣",
+              "按扣",
+              "纽扣"
+            ]
+          },
+          {
+            "option_title": "拉链",
+            "option_type": "单选",
+            "radioValue": "",
+            "options": [
+              "明拉链",
+              "暗拉链"
             ]
           }
         ]
-      },
-      {
-        "step_key": 4,
-        "step_name": "结构线分区",
-        "parameters": []
-      },
-      {
-        "step_key": 5,
-        "step_name": "设计细节",
-        "parameters": []
-      },
-      {
-        "step_key": 6,
-        "step_name": "面料填充",
-        "parameters": []
       },
       {
         "step_key": 7,
@@ -202,26 +186,36 @@
     "steps": [
       {
         "step_key": 1,
-        "step_name": "主题调研",
+        "step_name": "产品企划",
         "parameters": []
       },
       {
         "step_key": 2,
-        "step_name": "服装轮廓",
+        "step_name": "产品系列",
         "parameters": []
       },
       {
         "step_key": 3,
-        "step_name": "结构线分区",
+        "step_name": "暂定",
         "parameters": []
       },
       {
         "step_key": 4,
-        "step_name": "设计细节",
+        "step_name": "轮廓设计",
         "parameters": []
       },
       {
         "step_key": 5,
+        "step_name": "细节设计",
+        "parameters": []
+      },
+      {
+        "step_key": 6,
+        "step_name": "结构性细节",
+        "parameters": []
+      },
+      {
+        "step_key": 7,
         "step_name": "主题系列展示",
         "parameters": []
       }
