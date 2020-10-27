@@ -174,6 +174,192 @@ class DesignController {
             }
         }
     }
+    static async getKxsj(ctx){
+        let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,'../utils/jgxsj.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {theme_name,series_name,dress_style} = jsonArr[i];
+                if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings!==""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle &&
+                        silhouette === jsonArr[i].silhouette  &&
+                        craft === jsonArr[i].craft  &&
+                        mountings === jsonArr[i].mountings
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette==="" && craft==="" && mountings===""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft==="" && mountings===""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle &&
+                        silhouette === jsonArr[i].silhouette
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings===""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle &&
+                        silhouette === jsonArr[i].silhouette  &&
+                        craft === jsonArr[i].craft
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+    static async geKxsjDesign(ctx){
+        let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,'../utils/kxsj_design.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            if(jsonArr.length>0){
+                for(let i=0;i<jsonArr.length;i++){
+                    if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings!==""){
+                        if(themeName === jsonArr[i].themeName &&
+                            seriesName === jsonArr[i].seriesName &&
+                            dressStyle === jsonArr[i].dressStyle &&
+                            silhouette === jsonArr[i].silhouette  &&
+                            craft === jsonArr[i].craft  &&
+                            mountings === jsonArr[i].mountings
+                        ){
+                            data.push(jsonArr[i]);
+                        }
+                    } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette==="" && craft==="" && mountings===""){
+                        if(themeName === jsonArr[i].themeName &&
+                            seriesName === jsonArr[i].seriesName &&
+                            dressStyle === jsonArr[i].dressStyle
+                        ){
+                            data.push(jsonArr[i]);
+                        }
+                    } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft==="" && mountings===""){
+                        if(themeName === jsonArr[i].themeName &&
+                            seriesName === jsonArr[i].seriesName &&
+                            dressStyle === jsonArr[i].dressStyle &&
+                            silhouette === jsonArr[i].silhouette
+                        ){
+                            data.push(jsonArr[i]);
+                        }
+                    } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings===""){
+                        if(themeName === jsonArr[i].themeName &&
+                            seriesName === jsonArr[i].seriesName &&
+                            dressStyle === jsonArr[i].dressStyle &&
+                            silhouette === jsonArr[i].silhouette  &&
+                            craft === jsonArr[i].craft
+                        ){
+                            data.push(jsonArr[i]);
+                        }
+                    }
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+
+
+
+
+    static async saveKxsjDesign(ctx){
+        let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings="",yichang=0,jianbu=0,yaotou=0,dibai=0} =ctx.request.body;
+        try{
+            let jsonPath = path.join(__dirname,'../utils/kxsj_design_common.json');
+            let jsonPath1 = path.join(__dirname,'../utils/kxsj_design.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let result1 = fs.readFileSync(jsonPath1, 'utf8');
+            let jsonArr = JSON.parse(result);
+            let jsonArr1 = JSON.parse(result1);
+            if(jsonArr.length > 0){
+                for(let i=0;i<jsonArr.length;i++){
+                    if(jsonArr[i].theme_name === themeName &&
+                        jsonArr[i].series_name === seriesName &&
+                        jsonArr[i].dress_style === dressStyle &&
+                        jsonArr[i].silhouette === silhouette &&
+                        jsonArr[i].craft === craft &&
+                        jsonArr[i].mountings === mountings &&
+                        jsonArr[i].yichang === yichang &&
+                        jsonArr[i].jianbu === jianbu &&
+                        jsonArr[i].yaotou === yaotou &&
+                        jsonArr[i].dibai === dibai){
+                        for(let j=0;j<jsonArr1.length;j++){
+                            if(jsonArr1[j].themeName === themeName &&
+                                jsonArr1[j].seriesName === seriesName &&
+                                jsonArr1[j].dressStyle === dressStyle &&
+                                jsonArr1[j].silhouette === silhouette &&
+                                jsonArr1[j].craft === craft &&
+                                jsonArr1[j].mountings === mountings){
+                                jsonArr1[j].yichang = yichang ||0;
+                                jsonArr1[j].jianbu = jianbu ||0;
+                                jsonArr1[j].yaotou = yaotou ||0;
+                                jsonArr1[j].dibai = dibai ||0;
+                                jsonArr1[j].img_path = jsonArr[i].img_path||"";
+                                break;
+                            } else {
+                                jsonArr1[j].push({
+                                    themeName:themeName||'',
+                                    seriesName:seriesName||'',
+                                    dressStyle:dressStyle||'',
+                                    silhouette:silhouette||'',
+                                    craft:craft||'',
+                                    mountings:mountings||'',
+                                    yichang:yichang||0,
+                                    jianbu:jianbu||0,
+                                    yaotou:yaotou||0,
+                                    dibai:dibai||0,
+                                    img_path:jsonArr[i].img_path||'',
+                                })
+                            }
+                        }
+                    }
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '保存成功'
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
     static async saveResearch(ctx){
         let {modelName=""} = ctx.request.body;
         try{
