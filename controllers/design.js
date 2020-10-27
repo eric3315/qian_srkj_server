@@ -294,7 +294,6 @@ class DesignController {
 
 
 
-
     static async saveKxsjDesign(ctx){
         let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings="",yichang=0,jianbu=0,yaotou=0,dibai=0} =ctx.request.body;
         try{
