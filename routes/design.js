@@ -11,9 +11,9 @@ router.get('/getParameters',DesignController.getParameters);
 router.get('/getThemes',DesignController.getThemes);
 router.get('/getStyles',DesignController.getStyles);
 router.get('/getSeries',DesignController.getSeries);
-router.get('/getKxsj',DesignController.getKxsj);
 router.get('/geKxsjDesign',DesignController.geKxsjDesign);
 
+router.post('/getKxsj',DesignController.getKxsj);
 router.post('/saveKxsjDesign',DesignController.saveKxsjDesign);
 router.post('/saveResearch',DesignController.saveResearch);
 router.post('/delResearch',DesignController.delResearch);

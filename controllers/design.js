@@ -175,47 +175,77 @@ class DesignController {
         }
     }
     static async getKxsj(ctx){
-        let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings=""} = ctx.query;
+        let {paramArr=[]} = ctx.request.body;
         let data=[];
         try{
-            let jsonPath = path.join(__dirname,'../utils/jgxsj.json');
+            let jsonPath = path.join(__dirname,'../utils/kxsj.json');
             let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
-            for(let i=0;i<jsonArr.length;i++){
-                let {theme_name,series_name,dress_style} = jsonArr[i];
-                if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings!==""){
-                    if(theme_name === themeName &&
-                        series_name === seriesName &&
-                        dress_style === dressStyle &&
-                        silhouette === jsonArr[i].silhouette  &&
-                        craft === jsonArr[i].craft  &&
-                        mountings === jsonArr[i].mountings
-                    ){
-                        data.push(jsonArr[i]);
-                    }
-                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette==="" && craft==="" && mountings===""){
-                    if(theme_name === themeName &&
-                        series_name === seriesName &&
-                        dress_style === dressStyle
-                    ){
-                        data.push(jsonArr[i]);
-                    }
-                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft==="" && mountings===""){
-                    if(theme_name === themeName &&
-                        series_name === seriesName &&
-                        dress_style === dressStyle &&
-                        silhouette === jsonArr[i].silhouette
-                    ){
-                        data.push(jsonArr[i]);
-                    }
-                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings===""){
-                    if(theme_name === themeName &&
-                        series_name === seriesName &&
-                        dress_style === dressStyle &&
-                        silhouette === jsonArr[i].silhouette  &&
-                        craft === jsonArr[i].craft
-                    ){
-                        data.push(jsonArr[i]);
+            if(paramArr.length>0){
+                for(let i=0;i<paramArr.length;i++){
+                    let {themeName,seriesName,dressStyleArr,silhouetteArr,craftArr, mountingsArr} =paramArr[i];
+                    if(dressStyleArr.length>0 && silhouetteArr.length>0 && craftArr.length>0 && mountingsArr.length>0){
+                        for(let d=0;d<dressStyleArr.length;d++){
+                            for(let s=0;s<silhouetteArr.length;s++){
+                                for(let c=0;c<craftArr.length;c++){
+                                    for(let m=0;m<mountingsArr.length;m++){
+                                        for(let k=0;k<jsonArr.length;k++){
+                                            let {theme_name,series_name,dress_style,silhouette,craft,mountings} = jsonArr[k];
+                                            if(theme_name === themeName &&
+                                                series_name === seriesName &&
+                                                dress_style === dressStyleArr[d] &&
+                                                silhouette === silhouetteArr[s]  &&
+                                                craft === craftArr[c] &&
+                                                mountings === mountingsArr[m]){
+                                                data.push(jsonArr[k]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } else if(dressStyleArr.length>0 && silhouetteArr.length<=0 && craftArr.length<=0 && mountingsArr.length<=0){
+                        for(let d=0;d<dressStyleArr.length;d++){
+                            for(let k=0;k<jsonArr.length;k++){
+                                let {theme_name,series_name,dress_style} = jsonArr[k];
+                                if(theme_name === themeName &&
+                                    series_name === seriesName &&
+                                    dress_style === dressStyleArr[d]){
+                                    data.push(jsonArr[k]);
+                                }
+                            }
+                        }
+                    } else if(dressStyleArr.length>0 && silhouetteArr.length>0 && craftArr.length<=0 && mountingsArr.length<=0){
+                        for(let d=0;d<dressStyleArr.length;d++){
+                            for(let s=0;s<silhouetteArr.length;s++){
+                                for(let k=0;k<jsonArr.length;k++){
+                                    let {theme_name,series_name,dress_style,silhouette} = jsonArr[k];
+                                    if(theme_name === themeName &&
+                                        series_name === seriesName &&
+                                        dress_style === dressStyleArr[d] &&
+                                        silhouette === silhouetteArr[s]){
+                                        data.push(jsonArr[k]);
+                                    }
+                                }
+                            }
+                        }
+                    } else if(dressStyleArr.length>0 && silhouetteArr.length>0 && craftArr.length>0 && mountingsArr.length<=0){
+                        for(let d=0;d<dressStyleArr.length;d++){
+                            for(let s=0;s<silhouetteArr.length;s++){
+                                for(let c=0;c<craftArr.length;c++){
+                                    for(let k=0;k<jsonArr.length;k++){
+                                        let {theme_name,series_name,dress_style,silhouette,craft} = jsonArr[k];
+                                        if(theme_name === themeName &&
+                                            series_name === seriesName &&
+                                            dress_style === dressStyleArr[d] &&
+                                            silhouette === silhouetteArr[s]  &&
+                                            craft === craftArr[c]){
+                                            data.push(jsonArr[k]);
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -291,9 +321,6 @@ class DesignController {
             }
         }
     }
-
-
-
     static async saveKxsjDesign(ctx){
         let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings="",yichang=0,jianbu=0,yaotou=0,dibai=0} =ctx.request.body;
         try{
@@ -359,6 +386,65 @@ class DesignController {
             }
         }
     }
+    static async geJgxsj(ctx){
+        let {themeName="",seriesName="",dressStyle="",silhouette="",craft="",mountings=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,'../utils/jgxsj.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {theme_name,series_name,dress_style} = jsonArr[i];
+                if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings!==""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle &&
+                        silhouette === jsonArr[i].silhouette  &&
+                        craft === jsonArr[i].craft  &&
+                        mountings === jsonArr[i].mountings
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette==="" && craft==="" && mountings===""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft==="" && mountings===""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle &&
+                        silhouette === jsonArr[i].silhouette
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                } else if(themeName!=="" &&  seriesName!=="" && dressStyle!=="" && silhouette!=="" && craft!=="" && mountings===""){
+                    if(theme_name === themeName &&
+                        series_name === seriesName &&
+                        dress_style === dressStyle &&
+                        silhouette === jsonArr[i].silhouette  &&
+                        craft === jsonArr[i].craft
+                    ){
+                        data.push(jsonArr[i]);
+                    }
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+
     static async saveResearch(ctx){
         let {modelName=""} = ctx.request.body;
         try{

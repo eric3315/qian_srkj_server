@@ -38,5 +38,55 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典"
+  },
+  {
+    "img_path": "http://106.14.210.21:8080/demo/kxsj/A.png",
+    "theme_name": "虚实之境",
+    "series_name": "华丽日常",
+    "dress_style": "大衣",
+    "silhouette": "A型",
+    "craft": "绣花",
+    "mountings": "拉链",
+    "style": "古典"
+  },
+  {
+    "img_path": "http://106.14.210.21:8080/demo/kxsj/H.png",
+    "theme_name": "虚实之境",
+    "series_name": "华丽日常",
+    "dress_style": "大衣",
+    "silhouette": "H型",
+    "craft": "绣花",
+    "mountings": "拉链",
+    "style": "古典"
+  },
+  {
+    "img_path": "http://106.14.210.21:8080/demo/kxsj/X.png",
+    "theme_name": "虚实之境",
+    "series_name": "华丽日常",
+    "dress_style": "大衣",
+    "silhouette": "X型",
+    "craft": "绣花",
+    "mountings": "拉链",
+    "style": "古典"
+  },
+  {
+    "img_path": "http://106.14.210.21:8080/demo/kxsj/O.png",
+    "theme_name": "虚实之境",
+    "series_name": "华丽日常",
+    "dress_style": "风衣",
+    "silhouette": "O型",
+    "craft": "绣花",
+    "mountings": "拉链",
+    "style": "古典"
+  },
+  {
+    "img_path": "http://106.14.210.21:8080/demo/kxsj/O.png",
+    "theme_name": "虚实之境",
+    "series_name": "华丽日常",
+    "dress_style": "大衣",
+    "silhouette": "O型",
+    "craft": "绣花",
+    "mountings": "拉链",
+    "style": "古典"
   }
 ]
