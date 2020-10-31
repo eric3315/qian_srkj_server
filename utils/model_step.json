@@ -75,35 +75,33 @@
           {
             "option_title": "衣长",
             "option_type": "进度条",
-            "values": 10
+            "values": 0
           },
           {
             "option_title": "肩部",
             "option_type": "进度条",
-            "values": 40
+            "values": 0
           },
           {
             "option_title": "腰头",
             "option_type": "进度条",
-            "values": 50
+            "values": 0
           },
           {
             "option_title": "底摆",
             "option_type": "进度条",
-            "values": 70
+            "values": 0
           }
         ]
       },
       {
         "step_key": 5,
         "step_name": "结构性细节",
-        "kaijin_value": "",
-        "lingzi_value": "",
-        "koudai_value": "",
         "parameters": [
           {
             "option_title": "开襟",
             "option_type": "单选",
+            "values": "",
             "options": [
               "无开襟",
               "半开襟",
@@ -113,6 +111,7 @@
           {
             "option_title": "领子",
             "option_type": "单选",
+            "values": "",
             "options": [
               "无领",
               "圆领",
@@ -123,15 +122,16 @@
           },
           {
             "option_title": "口袋",
-            "option_type": "",
+            "option_type": "单选",
+            "values": "",
             "options": [
              {
-               "children_title": "明口袋",
-               "values": 60
+               "children_title": "明贴袋",
+               "values": 0
              },
               {
                 "children_title": "暗口袋",
-                "values": 20
+                "values": 0
               }
             ]
           }
@@ -140,13 +140,11 @@
       {
         "step_key": 6,
         "step_name": "细节设计",
-        "zhezhou_value": "",
-        "niukou_value": "",
-        "lalian_value": "",
         "parameters": [
           {
             "option_title": "褶皱",
             "option_type": "单选",
+            "values": "",
             "options": [
               "无褶",
               "有褶"
@@ -155,6 +153,7 @@
           {
             "option_title": "纽扣",
             "option_type": "单选",
+            "values": "",
             "options": [
               "无扣",
               "按扣",
@@ -164,7 +163,7 @@
           {
             "option_title": "拉链",
             "option_type": "单选",
-            "radioValue": "",
+            "values": "",
             "options": [
               "明拉链",
               "暗拉链"

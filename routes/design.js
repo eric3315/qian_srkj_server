@@ -11,11 +11,21 @@ router.get('/getParameters',DesignController.getParameters);
 router.get('/getThemes',DesignController.getThemes);
 router.get('/getStyles',DesignController.getStyles);
 router.get('/getSeries',DesignController.getSeries);
-router.get('/geKxsjDesign',DesignController.geKxsjDesign);
 
 router.post('/getKxsj',DesignController.getKxsj);
+router.post('/geJgxsj',DesignController.geJgxsj);
+router.post('/geXjsj',DesignController.geXjsj);
+
 router.post('/saveKxsjDesign',DesignController.saveKxsjDesign);
+router.post('/saveJgxsjDesign',DesignController.saveJgxsjDesign);
+router.post('/saveXjsjDesign',DesignController.saveXjsjDesign);
+
 router.post('/saveResearch',DesignController.saveResearch);
 router.post('/delResearch',DesignController.delResearch);
+
+router.post('/geStepJSON',DesignController.geStepJSON);
+router.post('/saveStepJSON',DesignController.saveStepJSON);
+
+
 
 export default router;
