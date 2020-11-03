@@ -1,0 +1,542 @@
+[
+  {
+    "gender": "kids",
+    "value": "20860",
+    "label": "上装",
+    "options": [
+      {
+        "label": "T恤",
+        "value": 2534,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_4img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_4bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_4f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_4wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2534_3_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_4img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_4bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_4f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_4wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2534_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2534_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "背心",
+        "value": 36566,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36566_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "衬衫",
+        "value": 2542,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2542_3_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2542_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2542_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "卫衣",
+        "value": 2549,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_5img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_5bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_5f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_5wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_4img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_4bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_4f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_4wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_144170_2549_3_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2549_1wbg.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gender": "kids",
+    "value": "20860",
+    "label": "外套",
+    "options": [
+      {
+        "label": "风衣",
+        "value": 36600,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36600_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "棉衣",
+        "value": 36578,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36578_3_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36578_2wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "西装",
+        "value": 36610,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_1img.png",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36610_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "大衣",
+        "value": 36599,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36599_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36599_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36599_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2532_36599_3_1wbg.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gender": "kids",
+    "value": "20860",
+    "label": "裙装",
+    "options": [
+      {
+        "label": "连衣裙",
+        "value": 2571,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_6img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_6bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_6f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_6wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_5img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_5bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_5f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_5wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_4img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_4bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_4f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_4wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2535_2571_3_1wbg.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gender": "kids",
+    "value": "20860",
+    "label": "裤装",
+    "options": [
+      {
+        "label": "连体裤",
+        "value": 2564,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2533_2564_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2533_2564_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2533_2564_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2533_2564_3_1wbg.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gender": "kids",
+    "value": "20860",
+    "label": "内衣",
+    "options": [
+      {
+        "label": "保暖内衣",
+        "value": 15407,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3_1wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15407_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "家居服",
+        "value": 15410,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_15410_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "泳装",
+        "value": 2548,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_2543_2548_1wbg.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gender": "kids",
+    "value": "20860",
+    "label": "婴童",
+    "options": [
+      {
+        "label": "裤装",
+        "value": 9002533,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2533_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "连体装",
+        "value": 900144171,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_144171_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "裙装",
+        "value": 9002535,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2535_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2535_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2535_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/20860_36164_2535_2wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "连体服",
+        "value": 900135450,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_4img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_4bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_4f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_4wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_135450_5_1wbg.png"
+          }
+        ]
+      },
+      {
+        "label": "哈衣包屁衣",
+        "value": 90036619,
+        "list": [
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_3img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_3bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_3f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_3wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_2img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_2bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_2f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_2wbg.png"
+          },
+          {
+            "sourceImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_1img.jpg",
+            "bgImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_1bg.png",
+            "fImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_1f.png",
+            "wbgImg": "http://106.14.210.21:8080/sxxl_integration/36164_36619_5_1wbg.png"
+          }
+        ]
+      }
+    ]
+  }
+]

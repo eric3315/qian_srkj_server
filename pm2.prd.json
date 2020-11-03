@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "qian_news_server",                 // 项目名
+      "name": "qian_srkj_server",                 // 项目名
       "script": "./bin/www",                      // 执行文件
       "cwd": "./",                                // 根目录
       "args": "",                                 // 传递给脚本的参数

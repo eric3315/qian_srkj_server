@@ -1,4 +1,7 @@
 import {format} from "../utils/util";
+import send from 'koa-send';
+
+
 const fs = require('fs');
 const path = require('path');
 
@@ -600,5 +603,139 @@ class DesignController {
     }
 
 
+    static async getStyleByGender(ctx){
+        let {gender=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,`../utils/${gender}_template.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+               let {gender:gender1,options} = jsonArr[i];
+               if(gender1 === gender){
+                   for(let j=0;j<options.length;j++){
+                       let {label} =options[j];
+                       data.push(label);
+                   }
+               }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+    static async getStyleList(ctx){
+        let {gender="",style=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,`../utils/${gender}_template.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {gender:gender1,options} = jsonArr[i];
+                if(gender1 === gender){
+                    for(let j=0;j<options.length;j++){
+                        let {label,list} =options[j];
+                        if(label === style){
+                            list.forEach(item=>{
+                               let {sourceImg,bgImg,fImg,wbgImg} =item;
+                                data.push({
+                                    gender,
+                                    style,
+                                    sourceImg,bgImg,fImg,wbgImg
+                                });
+                            });
+                        }
+                    }
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+
+    static async getPatternType(ctx){
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,`../utils/pattern.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {pattern} = jsonArr[i];
+                data.push(pattern);
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+    static async getPatternList(ctx){
+        let {patternType=""} = ctx.query;
+        let data=[];
+        try{
+            let jsonPath = path.join(__dirname,`../utils/pattern.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
+            let jsonArr = JSON.parse(result);
+            for(let i=0;i<jsonArr.length;i++){
+                let {pattern,list} = jsonArr[i];
+                if(pattern === patternType){
+                    data = list;
+                }
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+
+    static async getPatternImgUpload(ctx){
+        let {img=""} = ctx.query;
+        try{
+            if(img!==''){
+                const path = `/data/crawler/pachong/images/sxxl_integration/${img}`;
+                ctx.attachment(path);
+                await send(ctx, path,{root:'/'});
+            }
+        }catch (err) {
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
 }
 export default DesignController;

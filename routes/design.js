@@ -11,11 +11,16 @@ router.get('/getParameters',DesignController.getParameters);
 router.get('/getThemes',DesignController.getThemes);
 router.get('/getStyles',DesignController.getStyles);
 router.get('/getSeries',DesignController.getSeries);
+router.get('/getStyleByGender',DesignController.getStyleByGender);
+router.get('/getStyleList',DesignController.getStyleList);
+router.get('/getPatternType',DesignController.getPatternType);
+router.get('/getPatternList',DesignController.getPatternList);
+router.get('/getPatternImgUpload',DesignController.getPatternImgUpload);
+
 
 router.post('/getKxsj',DesignController.getKxsj);
 router.post('/geJgxsj',DesignController.geJgxsj);
 router.post('/geXjsj',DesignController.geXjsj);
-
 router.post('/saveKxsjDesign',DesignController.saveKxsjDesign);
 router.post('/saveJgxsjDesign',DesignController.saveJgxsjDesign);
 router.post('/saveXjsjDesign',DesignController.saveXjsjDesign);
