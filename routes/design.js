@@ -31,6 +31,7 @@ router.post('/delResearch',DesignController.delResearch);
 router.post('/geStepJSON',DesignController.geStepJSON);
 router.post('/saveStepJSON',DesignController.saveStepJSON);
 
+router.post('/getSVGUpload',DesignController.getSVGUpload);
 
 
 export default router;

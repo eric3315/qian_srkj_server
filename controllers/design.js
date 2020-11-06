@@ -1,6 +1,7 @@
 import {format} from "../utils/util";
 import send from 'koa-send';
 
+const { convert } = require('convert-svg-to-png');
 
 const fs = require('fs');
 const path = require('path');
@@ -736,6 +737,15 @@ class DesignController {
                 msg: `接口调用异常${err.message}`
             }
         }
+    }
+
+    static async getSVGUpload(ctx){
+        console.info(ctx.request.body)
+        let {svg=""} = ctx.request.body;
+        // const png = await convert(svg);
+        // console.info(png)
+        // ctx.set('Content-Type', 'image/png');
+        // ctx.send(png);
     }
 }
 export default DesignController;
