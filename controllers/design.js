@@ -1,7 +1,6 @@
 import {format} from "../utils/util";
 import send from 'koa-send';
 
-const { convert } = require('convert-svg-to-png');
 
 const fs = require('fs');
 const path = require('path');
@@ -739,13 +738,56 @@ class DesignController {
         }
     }
 
-    static async getSVGUpload(ctx){
-        console.info(ctx.request.body)
-        let {svg=""} = ctx.request.body;
-        // const png = await convert(svg);
-        // console.info(png)
-        // ctx.set('Content-Type', 'image/png');
-        // ctx.send(png);
+    static async imgBase64(ctx){
+        let {imgJson=""} =ctx.request.body;
+        console.info(JSON.stringify(imgJson));
+        try{
+            if(typeof imgJson ==='string'){
+                let sourceIndex = imgJson.lastIndexOf("\/"),
+                    sourceImgName = imgJson.substr(sourceIndex + 1, imgJson.length);
+                let sourceImageData = fs.readFileSync(`/data/crawler/pachong/images/sxxl_integration/${sourceImgName}`, 'utf8');
+                let sourceImageBase64 = sourceImageData.toString("base64");
+                imgJson = `data:image/bmp;base64,${sourceImageBase64}`;
+            } else {
+                for(let i=0;i<imgJson.length;i++){
+                    let {sourceImg,bgImg,fImg,wbgImg} = imgJson[i];
+                    let sourceIndex = sourceImg.lastIndexOf("\/"),
+                        sourceImgName = sourceImg.substr(sourceIndex + 1, sourceImg.length);
+                    console.info(`/data/crawler/pachong/images/sxxl_integration/${sourceImgName}`);
+                    let sourceImageData = fs.readFileSync(`/data/crawler/pachong/images/sxxl_integration/${sourceImgName}`, 'utf8');
+                    let sourceImageBase64 = sourceImageData.toString("base64");
+                    imgJson[i].sourceImg =`data:image/bmp;base64,${sourceImageBase64}`;
+
+                    let bgIndex = bgImg.lastIndexOf("\/"),
+                        bgImgName = bgImg.substr(bgIndex + 1, bgImg.length);
+                    let bgImageData = fs.readFileSync(`/data/crawler/pachong/images/sxxl_integration/${bgImgName}`, 'utf8');
+                    let bgImageBase64 = bgImageData.toString("base64");
+                    imgJson[i].bgImg = `data:image/bmp;base64,${bgImageBase64}`;
+
+                    let fIndex = fImg.lastIndexOf("\/"),
+                        fImgName = fImg.substr(fIndex + 1, fImg.length);
+                    let fImageData = fs.readFileSync(`/data/crawler/pachong/images/sxxl_integration/${fImgName}`, 'utf8');
+                    let fImageBase64 = fImageData.toString("base64");
+                    imgJson[i].fImg = `data:image/bmp;base64,${fImageBase64}`;
+
+                    let wbgIndex = wbgImg.lastIndexOf("\/"),
+                        wbgImgName = wbgImg.substr(wbgIndex + 1, wbgImg.length);
+                    let wbgImageData = fs.readFileSync(`/data/crawler/pachong/images/sxxl_integration/${wbgImgName}`, 'utf8');
+                    let wbgImageBase64 = wbgImageData.toString("base64");
+                    imgJson[i].wbgImg = `data:image/bmp;base64,${wbgImageBase64}`;
+                }
+            }
+            ctx.body = {
+                code: 200,
+                data:imgJson
+            }
+        }catch(err){
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
     }
 }
 export default DesignController;
