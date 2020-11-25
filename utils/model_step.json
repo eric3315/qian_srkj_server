@@ -6,7 +6,7 @@
     "steps": [
       {
         "step_key": 1,
-        "step_name": "产品企划",
+        "step_name": "企划调研分析",
         "parameters": [
           {
             "option_title": "品牌风格",
@@ -60,38 +60,53 @@
       },
       {
         "step_key": 2,
-        "step_name": "产品系列",
+        "step_name": "产品系列开发",
         "parameters": []
       },
       {
         "step_key": 3,
-        "step_name": "轮廓设计",
+        "step_name": "设计导入-轮廓",
         "parameters": [
           {
-            "option_title": "衣长",
+            "option_title": "衣身_长度",
             "option_type": "进度条",
-            "values": 0
+            "values": 20
           },
           {
-            "option_title": "肩部",
+            "option_title": "衣身_松量",
             "option_type": "进度条",
-            "values": 0
+            "values": 20
           },
           {
-            "option_title": "腰头",
+            "option_title": "袖身_长度",
             "option_type": "进度条",
-            "values": 0
+            "values": 20
           },
           {
-            "option_title": "底摆",
+            "option_title": "袖身_松量",
             "option_type": "进度条",
-            "values": 0
+            "values": 20
+          },
+          {
+            "option_title": "肩型_宽度",
+            "option_type": "进度条",
+            "values": 20
+          },
+          {
+            "option_title": "腰部_腰高",
+            "option_type": "进度条",
+            "values": 20
+          },
+          {
+            "option_title": "腰部_松量",
+            "option_type": "进度条",
+            "values": 20
           }
         ]
       },
       {
         "step_key": 4,
-        "step_name": "结构性细节",
+        "step_name": "结构设计-部件",
         "parameters": [
           {
             "option_title": "开襟",
@@ -134,7 +149,7 @@
       },
       {
         "step_key":5,
-        "step_name": "细节设计",
+        "step_name": "细节设计-装饰",
         "parameters": [
           {
             "option_title": "褶皱",

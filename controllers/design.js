@@ -320,7 +320,7 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yichang,jianbu,yaotou,dibai} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang} = paramJson[i];
                         let arr=jsonArr.filter(item=>{
                             return item.theme_name === theme_name &&
                                 item.series_name === series_name &&
@@ -329,27 +329,24 @@ class DesignController {
                                 item.craft === craft &&
                                 item.mountings === mountings &&
                                 item.style === style &&
-                                item.yichang === yichang &&
-                                item.jianbu === jianbu &&
-                                item.yaotou === yaotou &&
-                                item.dibai === dibai
+                                item.yisheng_changdu === yisheng_changdu &&
+                                item.jyisheng_songliang === jyisheng_songliang &&
+                                item.xiaosheng_changdu === xiaosheng_changdu &&
+                                item.xiaosheng_songliang === xiaosheng_songliang &&
+                                item.jianxing_kuandu === jianxing_kuandu &&
+                                item.yaobu_yaogao === yaobu_yaogao &&
+                                item.yaobu_songliang === yaobu_songliang
                         });
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yichang,jianbu,yaotou,dibai,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,img_path:arr[0].img_path
                             })
                         }
                     }
                 }
             }
             fs.writeFileSync(path.join(__dirname,'../utils/jgxsj.json'),JSON.stringify(data));
-            let mathRound = Math.round(Math.random()*(5-3)+3);
-            await new Promise(function (resolve) {
-                setTimeout(() => {
-                    resolve('等待')
-                }, mathRound*1000);
-            });
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -373,7 +370,7 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yichang,jianbu,yaotou,dibai,kaijin,lingzi,koudai,koudai_len} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len} = paramJson[i];
                         console.info(JSON.stringify(paramJson[i]));
                         console.info(JSON.stringify(jsonArr))
                         let arr=jsonArr.filter(item=>{
@@ -384,9 +381,13 @@ class DesignController {
                                 item.craft === craft &&
                                 item.mountings === mountings &&
                                 item.style === style &&
-                                item.yichang === yichang &&
-                                item.jianbu === jianbu &&
-                                item.yaotou === yaotou &&
+                                item.yisheng_changdu === yisheng_changdu &&
+                                item.jyisheng_songliang === jyisheng_songliang &&
+                                item.xiaosheng_changdu === xiaosheng_changdu &&
+                                item.xiaosheng_songliang === xiaosheng_songliang &&
+                                item.jianxing_kuandu === jianxing_kuandu &&
+                                item.yaobu_yaogao === yaobu_yaogao &&
+                                item.yaobu_songliang === yaobu_songliang &&
                                 item.kaijin === kaijin &&
                                 item.lingzi === lingzi &&
                                 item.koudai === koudai &&
@@ -395,19 +396,13 @@ class DesignController {
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yichang,jianbu,yaotou,dibai,kaijin,lingzi,koudai,koudai_len,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len,img_path:arr[0].img_path
                             })
                         }
                     }
                 }
             }
             fs.writeFileSync(path.join(__dirname,'../utils/xjsj.json'),JSON.stringify(data));
-            let mathRound = Math.round(Math.random()*(5-3)+3);
-            await new Promise(function (resolve) {
-                setTimeout(() => {
-                    resolve('等待')
-                }, mathRound*1000);
-            });
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -431,7 +426,7 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yichang,jianbu,yaotou,dibai,kaijin,lingzi,koudai,koudai_len,zhezhou,niukou,lalian} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len,zhezhou,niukou,lalian} = paramJson[i];
                         let arr=jsonArr.filter(item=>{
                             return item.theme_name === theme_name &&
                                 item.series_name === series_name &&
@@ -440,9 +435,13 @@ class DesignController {
                                 item.craft === craft &&
                                 item.mountings === mountings &&
                                 item.style === style &&
-                                item.yichang === yichang &&
-                                item.jianbu === jianbu &&
-                                item.yaotou === yaotou &&
+                                item.yisheng_changdu === yisheng_changdu &&
+                                item.jyisheng_songliang === jyisheng_songliang &&
+                                item.xiaosheng_changdu === xiaosheng_changdu &&
+                                item.xiaosheng_songliang === xiaosheng_songliang &&
+                                item.jianxing_kuandu === jianxing_kuandu &&
+                                item.yaobu_yaogao === yaobu_yaogao &&
+                                item.yaobu_songliang === yaobu_songliang &&
                                 item.kaijin === kaijin &&
                                 item.lingzi === lingzi &&
                                 item.koudai === koudai &&
@@ -454,19 +453,13 @@ class DesignController {
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yichang,jianbu,yaotou,dibai,kaijin,lingzi,koudai,koudai_len,zhezhou,niukou,lalian,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len,zhezhou,niukou,lalian,img_path:arr[0].img_path
                             })
                         }
                     }
                 }
             }
             fs.writeFileSync(path.join(__dirname,'../utils/ztxlzs.json'),JSON.stringify(data));
-            let mathRound = Math.round(Math.random()*(5-3)+3);
-            await new Promise(function (resolve) {
-                setTimeout(() => {
-                    resolve('等待')
-                }, mathRound*1000);
-            });
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -495,27 +488,27 @@ class DesignController {
                     "steps": [
                         {
                             "step_key": 1,
-                            "step_name": "产品企划",
+                            "step_name": "企划调研分析",
                             "parameters": []
                         },
                         {
                             "step_key": 2,
-                            "step_name": "产品系列",
+                            "step_name": "产品系列开发",
                             "parameters": []
                         },
                         {
                             "step_key": 3,
-                            "step_name": "轮廓设计",
+                            "step_name": "设计导入-轮廓",
                             "parameters": []
                         },
                         {
                             "step_key": 4,
-                            "step_name": "结构性细节",
+                            "step_name": "结构设计-部件",
                             "parameters": []
                         },
                         {
                             "step_key": 5,
-                            "step_name": "细节设计",
+                            "step_name": "细节设计-装饰",
                             "parameters": []
                         },
                         {
