@@ -344,6 +344,12 @@ class DesignController {
                 }
             }
             fs.writeFileSync(path.join(__dirname,'../utils/jgxsj.json'),JSON.stringify(data));
+            let mathRound = Math.round(Math.random()*(5-3)+3);
+            await new Promise(function (resolve) {
+                setTimeout(() => {
+                    resolve('等待')
+                }, mathRound*1000);
+            });
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -396,6 +402,12 @@ class DesignController {
                 }
             }
             fs.writeFileSync(path.join(__dirname,'../utils/xjsj.json'),JSON.stringify(data));
+            let mathRound = Math.round(Math.random()*(5-3)+3);
+            await new Promise(function (resolve) {
+                setTimeout(() => {
+                    resolve('等待')
+                }, mathRound*1000);
+            });
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -449,6 +461,12 @@ class DesignController {
                 }
             }
             fs.writeFileSync(path.join(__dirname,'../utils/ztxlzs.json'),JSON.stringify(data));
+            let mathRound = Math.round(Math.random()*(5-3)+3);
+            await new Promise(function (resolve) {
+                setTimeout(() => {
+                    resolve('等待')
+                }, mathRound*1000);
+            });
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -487,17 +505,17 @@ class DesignController {
                         },
                         {
                             "step_key": 3,
-                            "step_name": "服装轮廓",
+                            "step_name": "轮廓设计",
                             "parameters": []
                         },
                         {
                             "step_key": 4,
-                            "step_name": "结构线分区",
+                            "step_name": "结构性细节",
                             "parameters": []
                         },
                         {
                             "step_key": 5,
-                            "step_name": "设计细节",
+                            "step_name": "细节设计",
                             "parameters": []
                         },
                         {
