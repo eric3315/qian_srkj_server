@@ -109,25 +109,47 @@
         "step_name": "结构设计-部件",
         "parameters": [
           {
-            "option_title": "开襟",
-            "option_type": "单选",
-            "values": "",
-            "options": [
-              "无开襟",
-              "半开襟",
-              "全开襟"
-            ]
-          },
-          {
-            "option_title": "领子",
+            "option_title": "领型",
             "option_type": "单选",
             "values": "",
             "options": [
               "无领",
-              "圆领",
               "立领",
-              "翻驳领",
-              "丝巾领"
+              "翻领",
+              "驳领",
+              "帽领",
+              "带领"
+            ]
+          },
+          {
+            "option_title": "肩型",
+            "option_type": "单选",
+            "values": "",
+            "options": [
+              "垫肩",
+              "平肩",
+              "落肩"
+            ]
+          },
+          {
+            "option_title": "袖型",
+            "option_type": "单选",
+            "values": "",
+            "options": [
+              "无袖",
+              "装袖",
+              "插肩袖",
+              "连身袖"
+            ]
+          },
+          {
+            "option_title": "门襟",
+            "option_type": "单选",
+            "values": "",
+            "options": [
+              "无门襟",
+              "暗门襟",
+              "明门襟"
             ]
           },
           {
@@ -135,14 +157,9 @@
             "option_type": "单选",
             "values": "",
             "options": [
-             {
-               "children_title": "明贴袋",
-               "values": 0
-             },
-              {
-                "children_title": "暗口袋",
-                "values": 0
-              }
+              "无袋",
+              "插袋",
+              "明贴袋"
             ]
           }
         ]

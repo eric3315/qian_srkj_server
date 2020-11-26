@@ -162,6 +162,7 @@
     ],
     "wear_outside_values": [],
     "wear_outside": [
+      "连衣裙",
       "大衣",
       "风衣",
       "西装"
@@ -175,7 +176,12 @@
     "silhouette": [
       "A型",
       "H型",
-      "O型"
+      "O型",
+      "P型",
+      "S型",
+      "T型",
+      "V型",
+      "X型"
     ],
     "craft_values": [],
     "craft": [
@@ -356,6 +362,7 @@
     ],
     "wear_outside_values": [],
     "wear_outside": [
+      "连衣裙",
       "大衣",
       "风衣",
       "西装"
@@ -369,7 +376,12 @@
     "silhouette": [
       "A型",
       "H型",
-      "O型"
+      "O型",
+      "P型",
+      "S型",
+      "T型",
+      "V型",
+      "X型"
     ],
     "craft_values": [],
     "craft": [

@@ -8,10 +8,13 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":20,
-    "jianbu":10,
-    "yaotou":10,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   },
   {
     "img_path": "http://106.14.210.21:8080/demo/kxsj/A-K1.png",
@@ -22,10 +25,13 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":10,
-    "jianbu":20,
-    "yaotou":40,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   },
   {
     "img_path": "http://106.14.210.21:8080/demo/kxsj/A-K2.png",
@@ -36,10 +42,13 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":20,
-    "jianbu":10,
-    "yaotou":10,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   },
   {
     "img_path": "http://106.14.210.21:8080/demo/kxsj/H-K1.png",
@@ -50,10 +59,13 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":20,
-    "jianbu":10,
-    "yaotou":10,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   },
   {
     "img_path": "http://106.14.210.21:8080/demo/kxsj/X-K1.png",
@@ -64,10 +76,13 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":20,
-    "jianbu":10,
-    "yaotou":10,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   },
   {
     "img_path": "http://106.14.210.21:8080/demo/kxsj/X-K2.png",
@@ -78,10 +93,13 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":20,
-    "jianbu":10,
-    "yaotou":10,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   },
   {
     "img_path": "http://106.14.210.21:8080/demo/kxsj/X-K3.png",
@@ -92,9 +110,12 @@
     "craft": "绣花",
     "mountings": "拉链",
     "style": "古典",
-    "yichang":20,
-    "jianbu":10,
-    "yaotou":10,
-    "dibai":50
+    "yisheng_changdu": 20,
+    "jyisheng_songliang": 10,
+    "xiaosheng_changdu": 10,
+    "xiaosheng_songliang": 10,
+    "jianxing_kuandu": 20,
+    "yaobu_yaogao": 20,
+    "yaobu_songliang": 20
   }
 ]

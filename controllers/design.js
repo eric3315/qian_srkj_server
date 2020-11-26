@@ -360,6 +360,7 @@ class DesignController {
             }
         }
     }
+
     static async saveJgxsjDesign(ctx){
         let {paramJson=[]} =ctx.request.body;
         let data=[];
@@ -370,7 +371,7 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai} = paramJson[i];
                         console.info(JSON.stringify(paramJson[i]));
                         console.info(JSON.stringify(jsonArr))
                         let arr=jsonArr.filter(item=>{
@@ -388,15 +389,17 @@ class DesignController {
                                 item.jianxing_kuandu === jianxing_kuandu &&
                                 item.yaobu_yaogao === yaobu_yaogao &&
                                 item.yaobu_songliang === yaobu_songliang &&
-                                item.kaijin === kaijin &&
-                                item.lingzi === lingzi &&
-                                item.koudai === koudai &&
-                                item.koudai_len === koudai_len
+                                item.lingxing ===lingxing  &&
+                                item.jianxing ===jianxing  &&
+                                item.xiuxing === xiuxing &&
+                                item.menjin ===menjin  &&
+                                item.koudai === koudai
+
                         });
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,img_path:arr[0].img_path
                             })
                         }
                     }
@@ -426,7 +429,7 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len,zhezhou,niukou,lalian} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,zhezhou,niukou,lalian} = paramJson[i];
                         let arr=jsonArr.filter(item=>{
                             return item.theme_name === theme_name &&
                                 item.series_name === series_name &&
@@ -442,10 +445,11 @@ class DesignController {
                                 item.jianxing_kuandu === jianxing_kuandu &&
                                 item.yaobu_yaogao === yaobu_yaogao &&
                                 item.yaobu_songliang === yaobu_songliang &&
-                                item.kaijin === kaijin &&
-                                item.lingzi === lingzi &&
+                                item.lingxing ===lingxing  &&
+                                item.jianxing ===jianxing  &&
+                                item.xiuxing === xiuxing &&
+                                item.menjin ===menjin  &&
                                 item.koudai === koudai &&
-                                item.koudai_len === koudai_len &&
                                 item.zhezhou === zhezhou &&
                                 item.niukou === niukou &&
                                 item.lalian === lalian
@@ -453,7 +457,7 @@ class DesignController {
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,kaijin,lingzi,koudai,koudai_len,zhezhou,niukou,lalian,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,zhezhou,niukou,lalian,img_path:arr[0].img_path
                             })
                         }
                     }
