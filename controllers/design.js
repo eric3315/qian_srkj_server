@@ -197,9 +197,7 @@ class DesignController {
                                             if(theme_name === themeName &&
                                                 series_name === seriesName &&
                                                 dress_style === dressStyleArr[d] &&
-                                                silhouette === silhouetteArr[s]  &&
-                                                craft === craftArr[c] &&
-                                                mountings === mountingsArr[m]){
+                                                silhouette === silhouetteArr[s]){
                                                 data.push(jsonArr[k]);
                                             }
                                         }
@@ -241,8 +239,8 @@ class DesignController {
                                         if(theme_name === themeName &&
                                             series_name === seriesName &&
                                             dress_style === dressStyleArr[d] &&
-                                            silhouette === silhouetteArr[s]  &&
-                                            craft === craftArr[c]){
+                                            silhouette === silhouetteArr[s]
+                                            ){
                                             data.push(jsonArr[k]);
                                         }
                                     }
@@ -320,19 +318,16 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yishen_changdu,yishen_songliang,xiushen_changdu,xiushen_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang} = paramJson[i];
                         let arr=jsonArr.filter(item=>{
                             return item.theme_name === theme_name &&
                                 item.series_name === series_name &&
                                 item.dress_style === dress_style &&
                                 item.silhouette === silhouette &&
-                                item.craft === craft &&
-                                item.mountings === mountings &&
-                                item.style === style &&
-                                item.yisheng_changdu === yisheng_changdu &&
-                                item.jyisheng_songliang === jyisheng_songliang &&
-                                item.xiaosheng_changdu === xiaosheng_changdu &&
-                                item.xiaosheng_songliang === xiaosheng_songliang &&
+                                item.yishen_changdu === yishen_changdu &&
+                                item.yishen_songliang === yishen_songliang &&
+                                item.xiushen_changdu === xiushen_changdu &&
+                                item.xiushen_songliang === xiushen_songliang &&
                                 item.jianxing_kuandu === jianxing_kuandu &&
                                 item.yaobu_yaogao === yaobu_yaogao &&
                                 item.yaobu_songliang === yaobu_songliang
@@ -340,7 +335,7 @@ class DesignController {
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yishen_changdu,yishen_songliang,xiushen_changdu,xiushen_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,img_path:arr[0].img_path
                             })
                         }
                     }
@@ -371,7 +366,7 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yishen_changdu,yishen_songliang,xiushen_changdu,xiushen_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai} = paramJson[i];
                         console.info(JSON.stringify(paramJson[i]));
                         console.info(JSON.stringify(jsonArr))
                         let arr=jsonArr.filter(item=>{
@@ -379,13 +374,10 @@ class DesignController {
                                 item.series_name === series_name &&
                                 item.dress_style === dress_style &&
                                 item.silhouette === silhouette &&
-                                item.craft === craft &&
-                                item.mountings === mountings &&
-                                item.style === style &&
-                                item.yisheng_changdu === yisheng_changdu &&
-                                item.jyisheng_songliang === jyisheng_songliang &&
-                                item.xiaosheng_changdu === xiaosheng_changdu &&
-                                item.xiaosheng_songliang === xiaosheng_songliang &&
+                                item.yishen_changdu === yishen_changdu &&
+                                item.yishen_songliang === yishen_songliang &&
+                                item.xiushen_changdu === xiushen_changdu &&
+                                item.xiushen_songliang === xiushen_songliang &&
                                 item.jianxing_kuandu === jianxing_kuandu &&
                                 item.yaobu_yaogao === yaobu_yaogao &&
                                 item.yaobu_songliang === yaobu_songliang &&
@@ -399,7 +391,7 @@ class DesignController {
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yishen_changdu,yishen_songliang,xiushen_changdu,xiushen_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,img_path:arr[0].img_path
                             })
                         }
                     }
@@ -429,19 +421,16 @@ class DesignController {
             if(jsonArr.length > 0){
                 if(paramJson.length>0){
                     for(let i=0;i<paramJson.length;i++){
-                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,zhezhou,niukou,lalian} = paramJson[i];
+                        let {theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yishen_changdu,yishen_songliang,xiushen_changdu,xiushen_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,zhezhou,niukou,lalian} = paramJson[i];
                         let arr=jsonArr.filter(item=>{
                             return item.theme_name === theme_name &&
                                 item.series_name === series_name &&
                                 item.dress_style === dress_style &&
                                 item.silhouette === silhouette &&
-                                item.craft === craft &&
-                                item.mountings === mountings &&
-                                item.style === style &&
-                                item.yisheng_changdu === yisheng_changdu &&
-                                item.jyisheng_songliang === jyisheng_songliang &&
-                                item.xiaosheng_changdu === xiaosheng_changdu &&
-                                item.xiaosheng_songliang === xiaosheng_songliang &&
+                                item.yishen_changdu === yishen_changdu &&
+                                item.yishen_songliang === yishen_songliang &&
+                                item.xiushen_changdu === xiushen_changdu &&
+                                item.xiushen_songliang === xiushen_songliang &&
                                 item.jianxing_kuandu === jianxing_kuandu &&
                                 item.yaobu_yaogao === yaobu_yaogao &&
                                 item.yaobu_songliang === yaobu_songliang &&
@@ -457,7 +446,7 @@ class DesignController {
                         console.info(JSON.stringify(arr));
                         if(arr.length>0){
                             data.push({
-                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yisheng_changdu,jyisheng_songliang,xiaosheng_changdu,xiaosheng_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,zhezhou,niukou,lalian,img_path:arr[0].img_path
+                                theme_name,series_name,dress_style,silhouette,craft,mountings,style,name,yishen_changdu,yishen_songliang,xiushen_changdu,xiushen_songliang,jianxing_kuandu,yaobu_yaogao,yaobu_songliang,lingxing,jianxing,xiuxing,menjin,koudai,zhezhou,niukou,lalian,img_path:arr[0].img_path
                             })
                         }
                     }
