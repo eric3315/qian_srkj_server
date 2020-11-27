@@ -3,13 +3,15 @@ import send from 'koa-send';
 
 
 const fs = require('fs');
+const path = require('path');
 
 class DesignController {
 
     static async getResearch(ctx) {
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/model_step.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/model_step.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             jsonArr.forEach(item => {
                 let {model_name, create_time, update_time} = item;
@@ -33,7 +35,8 @@ class DesignController {
         let {modelName = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/model_step.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/model_step.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {model_name, steps} = jsonArr[i];
@@ -68,7 +71,8 @@ class DesignController {
         let {stepKey = '', modelName = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/model_step.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/model_step.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {model_name, steps} = jsonArr[i];
@@ -100,7 +104,8 @@ class DesignController {
         let {themeName = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/theme.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/theme.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {theme_name, theme_children} = jsonArr[i];
@@ -126,7 +131,8 @@ class DesignController {
         let {styles = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/style_img.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/style_img.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             let stylesArr = styles.split(',');
             for (let i = 0; i < stylesArr.length; i++) {
@@ -156,7 +162,8 @@ class DesignController {
         let {themeName = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/series_img.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/series_img.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {theme_name} = jsonArr[i];
@@ -182,7 +189,8 @@ class DesignController {
         let {paramArr = []} = ctx.request.body;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/kxsj.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/kxsj.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             if (paramArr.length > 0) {
                 for (let i = 0; i < paramArr.length; i++) {
@@ -267,7 +275,8 @@ class DesignController {
     static async geJgxsj(ctx) {
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/jgxsj.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/jgxsj.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 data.push(jsonArr[i])
@@ -289,7 +298,8 @@ class DesignController {
     static async geXjsj(ctx) {
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/xjsj.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/xjsj.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 data.push(jsonArr[i])
@@ -312,7 +322,8 @@ class DesignController {
         let {paramJson = []} = ctx.request.body;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/kxsj_design_common.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/kxsj_design_common.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             if (jsonArr.length > 0) {
                 if (paramJson.length > 0) {
@@ -355,7 +366,7 @@ class DesignController {
                     }
                 }
             }
-            fs.writeFileSync('/data/qian_srkj_server/utils/jgxsj.json', JSON.stringify(data));
+            fs.writeFileSync(path.join(__dirname, '../utils/jgxsj.json'), JSON.stringify(data));
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -374,7 +385,8 @@ class DesignController {
         let {paramJson = []} = ctx.request.body;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/jgxsj_design_common.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/jgxsj_design_common.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             if (jsonArr.length > 0) {
                 if (paramJson.length > 0) {
@@ -430,7 +442,7 @@ class DesignController {
                     }
                 }
             }
-            fs.writeFileSync('/data/qian_srkj_server/utils/xjsj.json', JSON.stringify(data));
+            fs.writeFileSync(path.join(__dirname, '../utils/xjsj.json'), JSON.stringify(data));
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -449,7 +461,8 @@ class DesignController {
         let {paramJson = []} = ctx.request.body;
         let data = [];
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/xjsj_design_common.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/xjsj_design_common.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             if (jsonArr.length > 0) {
                 if (paramJson.length > 0) {
@@ -508,7 +521,7 @@ class DesignController {
                     }
                 }
             }
-            fs.writeFileSync('/data/qian_srkj_server/utils/ztxlzs.json', JSON.stringify(data));
+            fs.writeFileSync(path.join(__dirname, '../utils/ztxlzs.json'), JSON.stringify(data));
             ctx.body = {
                 code: 200,
                 msg: '保存成功',
@@ -526,7 +539,8 @@ class DesignController {
     static async saveResearch(ctx) {
         let {modelName = ""} = ctx.request.body;
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/model_step.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/model_step.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             let flag = jsonArr.some(item => {
                 return item.model_name === modelName
@@ -569,7 +583,7 @@ class DesignController {
                         }
                     ]
                 });
-                fs.writeFileSync('/data/qian_srkj_server/utils/model_step.json', JSON.stringify(jsonArr));
+                fs.writeFileSync(jsonPath, JSON.stringify(jsonArr));
 
             } else {
                 for (let i = 0; i < jsonArr.length; i++) {
@@ -579,7 +593,7 @@ class DesignController {
                         jsonArr[i].update_time = await format(new Date(), 'yyyy-MM-dd HH:mm:ss');
                     }
                 }
-                fs.writeFileSync('/data/qian_srkj_server/utils/model_step.json', JSON.stringify(jsonArr));
+                fs.writeFileSync(jsonPath, JSON.stringify(jsonArr));
             }
             ctx.body = {
                 code: 200,
@@ -597,7 +611,8 @@ class DesignController {
     static async delResearch(ctx) {
         let {modelName = ""} = ctx.request.body;
         try {
-            let result = fs.readFileSync('/data/qian_srkj_server/utils/model_step.json', 'utf8');
+            let jsonPath = path.join(__dirname, '../utils/model_step.json');
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {model_name} = jsonArr[i];
@@ -607,7 +622,7 @@ class DesignController {
                     i--;
                 }
             }
-            fs.writeFileSync('/data/qian_srkj_server/utils/model_step.json', JSON.stringify(jsonArr));
+            fs.writeFileSync(jsonPath, JSON.stringify(jsonArr));
             ctx.body = {
                 code: 200,
                 msg: '删除成功'
@@ -624,8 +639,9 @@ class DesignController {
     static async geStepJSON(ctx) {
         let {step = "", modelName = ""} = ctx.request.body;
         try {
-            if (fs.existsSync(`/data/qian_srkj_server/utils/${modelName}_${step}.json`)) {
-                let result = fs.readFileSync(`/data/qian_srkj_server/utils/${modelName}_${step}.json`, 'utf8');
+            let jsonPath = path.join(__dirname, `../utils/${modelName}_${step}.json`);
+            if (fs.existsSync(jsonPath)) {
+                let result = fs.readFileSync(jsonPath, 'utf8');
                 let jsonArr = JSON.parse(result);
                 ctx.body = {
                     code: 200,
@@ -650,7 +666,7 @@ class DesignController {
     static async saveStepJSON(ctx) {
         let {step = "", modelName = "", paramJson = []} = ctx.request.body;
         try {
-            fs.writeFileSync(`/data/qian_srkj_server/utils/${modelName}_${step}.json`, JSON.stringify(paramJson));
+            fs.writeFileSync(path.join(__dirname, `../utils/${modelName}_${step}.json`), JSON.stringify(paramJson));
             ctx.body = {
                 code: 200,
                 msg: '保存成功'
@@ -669,7 +685,8 @@ class DesignController {
         let {gender = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync(`/data/qian_srkj_server/utils/${gender}_template.json`, 'utf8');
+            let jsonPath = path.join(__dirname, `../utils/${gender}_template.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {gender: gender1, options} = jsonArr[i];
@@ -698,7 +715,8 @@ class DesignController {
         let {gender = "", style = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync(`/data/qian_srkj_server/utils/${gender}_template.json`, 'utf8');
+            let jsonPath = path.join(__dirname, `../utils/${gender}_template.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {gender: gender1, options} = jsonArr[i];
@@ -735,7 +753,8 @@ class DesignController {
     static async getPatternType(ctx) {
         let data = [];
         try {
-            let result = fs.readFileSync(`/data/qian_srkj_server/utils/pattern.json`, 'utf8');
+            let jsonPath = path.join(__dirname, `../utils/pattern.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {pattern} = jsonArr[i];
@@ -759,7 +778,8 @@ class DesignController {
         let {patternType = ""} = ctx.query;
         let data = [];
         try {
-            let result = fs.readFileSync(`/data/qian_srkj_server/utils/pattern.json`, 'utf8');
+            let jsonPath = path.join(__dirname, `../utils/pattern.json`);
+            let result = fs.readFileSync(jsonPath, 'utf8');
             let jsonArr = JSON.parse(result);
             for (let i = 0; i < jsonArr.length; i++) {
                 let {pattern, list} = jsonArr[i];
