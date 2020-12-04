@@ -169,31 +169,60 @@
         "step_name": "细节设计-装饰",
         "parameters": [
           {
-            "option_title": "褶皱",
-            "option_type": "单选",
-            "values": "",
+            "option_title": "扣合件",
+            "option_desc": "",
+            "option_type": "多选",
+            "checkedValues": [],
             "options": [
-              "无褶",
-              "有褶"
+              "敞襟",
+              "纽扣",
+              "拉链",
+              "系带"
             ]
           },
           {
-            "option_title": "纽扣",
-            "option_type": "单选",
-            "values": "",
+            "option_title": "装饰件",
+            "option_desc": "",
+            "option_type": "多选",
+            "checkedValues": [],
             "options": [
-              "无扣",
-              "按扣",
-              "纽扣"
+              "扣", "链", "铆钉", "珠子", "标盘", "徽章"
             ]
           },
           {
-            "option_title": "拉链",
-            "option_type": "单选",
-            "values": "",
+            "option_title": "分割",
+            "option_desc": "",
+            "option_type": "多选",
+            "checkedValues": [],
             "options": [
-              "明拉链",
-              "暗拉链"
+              "育克", "衣衩", "卡夫", "挖肩"
+            ]
+          },
+          {
+            "option_title": "缉线",
+            "option_desc": "",
+            "option_type": "多选",
+            "checkedValues": [],
+            "options": [
+              "明迹线", "包边", "嵌条"
+            ]
+          },
+          {
+            "option_title": "褶裥",
+            "option_desc": "",
+            "option_type": "多选",
+            "checkedValues": [],
+            "options": [
+              "缩褶",  "波形褶", "裥褶",  "塔克褶"
+            ]
+          },
+          {
+            "option_title": "装饰",
+            "option_desc": "",
+            "option_type": "多选",
+            "checkedValues": [],
+            "options": [
+              "袢带", "腰带", "兜盖",  "交叠",  "翻折"
             ]
           }
         ]

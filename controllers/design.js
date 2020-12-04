@@ -308,6 +308,28 @@ class DesignController {
         }
     }
 
+    static async geZtxlzs(ctx) {
+        let data = [];
+        try {
+            let result = fs.readFileSync('/data/qian_srkj_server/utils/ztxlzs.json', 'utf8');
+            let jsonArr = JSON.parse(result);
+            for (let i = 0; i < jsonArr.length; i++) {
+                data.push(jsonArr[i])
+            }
+            ctx.body = {
+                code: 200,
+                msg: '查询成功',
+                data
+            }
+        } catch (err) {
+            console.error(err);
+            ctx.body = {
+                code: 412,
+                msg: `接口调用异常${err.message}`
+            }
+        }
+    }
+
     static async saveKxsjDesign(ctx) {
         let {paramJson = []} = ctx.request.body;
         let data = [];

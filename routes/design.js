@@ -17,10 +17,11 @@ router.get('/getPatternType',DesignController.getPatternType);
 router.get('/getPatternList',DesignController.getPatternList);
 router.get('/getPatternImgUpload',DesignController.getPatternImgUpload);
 
-
 router.post('/getKxsj',DesignController.getKxsj);
 router.post('/geJgxsj',DesignController.geJgxsj);
 router.post('/geXjsj',DesignController.geXjsj);
+router.post('/geZtxlzs',DesignController.geZtxlzs);
+
 router.post('/saveKxsjDesign',DesignController.saveKxsjDesign);
 router.post('/saveJgxsjDesign',DesignController.saveJgxsjDesign);
 router.post('/saveXjsjDesign',DesignController.saveXjsjDesign);
